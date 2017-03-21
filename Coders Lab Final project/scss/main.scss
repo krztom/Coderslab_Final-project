@@ -1,0 +1,81 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+$gutter: 5px;
+
+
+@mixin grid($colNumber) {
+  @for $i from 1 through $colNumber {
+    .col-#{$i} {
+      width: 100% / $colNumber * $i;
+    }
+  }
+}
+
+
+%clearfix {
+  &:before, &:after{
+    content: "";
+    display: table;
+    clear: both
+  }
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1500px;
+  background-color: #aaaaaa;
+
+
+}
+
+
+
+  .row {
+
+    @extend %clearfix;
+
+
+    margin-right: -$gutter;
+    margin-left: -$gutter;
+
+
+    [class*='col-'] {
+      width: 100%;
+      float: left;
+      padding-left: $gutter;
+      padding-right: $gutter;
+    }
+
+
+    @media screen and (min-width: 640px) {
+      @include grid(12);
+      margin-bottom: 10px;
+    }
+
+  }
+
+
+
+.inner {
+  color: #99EA00;
+  padding: 25px;
+  text-align: center;
+
+}
+
+
+#Welcome{
+  background-color: darkslateblue;
+}
+html{
+  background-color: darkgray;
+}
