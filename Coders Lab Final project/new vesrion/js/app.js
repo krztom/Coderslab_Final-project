@@ -1,20 +1,24 @@
 $(document).ready(function() {
-    today = new Date()
-    if (today.getHours() >= 0 && today.getHours() < 12) {
-        document.getElementById('Good morning').innerHTML = 'Good morning mr Tomecki';
-    }if (today.getHours() >= 0 && today.getHours() < 17) {
-        document.getElementById('Good morning').innerHTML = 'Good morning mr Tomecki';
-    }else {
-        document.getElementById('Good morning').innerHTML = 'Good evening mr Tomecki';
-    }
+    var myDate = new Date();
+    var hrs = myDate.getHours();
 
-  /*
-  * Plugin intialization
-  */
+    var greet;
+
+    if (hrs < 12)
+        greet = 'Good Morning';
+    else if (hrs >= 12 && hrs <= 17)
+        greet = 'Good Afternoon';
+    else if (hrs >= 17 && hrs <= 24)
+        greet = 'Good Evening';
+
+    document.getElementById('Good morning').innerHTML =
+        greet + ' mr Tomecki';
+
+
     $('#pagepiling').pagepiling({
       menu: '#menu',
       anchors: ['page1', 'page2', 'page3', 'page4'],
-      sectionsColor: ['#b5b5b7', '#252839', '#677077', '#252839'],
+      sectionsColor: ['#b5b5b7', '#252839', '#252839', '#252839'],
       navigation: {
         'position': 'right',
         'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']

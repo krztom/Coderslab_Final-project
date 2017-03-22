@@ -7,7 +7,7 @@ body {
 
 body, input, button {
     font-family: 'Lato', Calibri, Arial, sans-serif;
-    color: #f2f2f2;
+    color: #b5b5b7;
 }
 
 .noFill {
@@ -15,7 +15,7 @@ body, input, button {
 }
 
 header {
-    width: 100%;
+    width: 90%;
     height: 80px;
 
     position: relative;
@@ -97,12 +97,11 @@ header button svg {
 }
 
 header button svg .fill {
-    fill: #25b99a;
+    fill: #f2b632;
 }
 
 .container {
-    width: 100%;
-    float: left;
+    width: 80%;
     padding: 15px;
 }
 
@@ -180,18 +179,18 @@ ul.todo li .buttons button svg {
 
 ul.todo li .buttons button.complete svg {
     border-radius: 11px;
-    border: 1.5px solid #25b99a;
+    border: 1.5px solid #f2b632;
 
     transition: background 0.2s ease;
 }
 
 ul.todo#completed li .buttons button.complete svg {
-    background: #25b99a;
+    background: #f2b632;
     border: 0px;
 }
 
 ul.todo:not(#completed) li .buttons button.complete:hover svg {
-    background: rgba(37, 185, 154, 0.75);
+    background: #f2b632;
 }
 
 ul.todo:not(#completed) li .buttons button.complete:hover svg .fill {
@@ -215,7 +214,7 @@ ul.todo li .buttons button.remove:hover svg .fill {
 }
 
 ul.todo li .buttons button.complete svg .fill {
-    fill: #25b99a;
+    fill: #f2b632;
 }
 
 ul.todo#completed {
@@ -255,7 +254,7 @@ ul.todo#completed:after {
 }
 #toDoHold{
     width: 80%;
-    margin: 10% auto;
+    padding: 0 10% ;
 }
 #item{
     position: relative;

@@ -36,7 +36,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 100%;
     margin:0;
     padding:0;
-    color:#f2f2f2;
+    color:#b5b5b7;
 }
 q:before,q:after {
     content:'';
@@ -96,9 +96,10 @@ p{
 }
 #menu{
     position:fixed;
+    float: left;
     top:0;
-    left:0;
-    height: 40px;
+    left:30%;
+    height: 60px;
     z-index: 70;
     width: 100%;
     padding: 0;
@@ -110,12 +111,6 @@ p{
     width: 50%;
     margin: 0 auto;
     font-size: 1.5em;
-}
-.twitter-share-button{
-    position: fixed !important;
-    z-index: 99;
-    right: 149px;
-    top: 9px;
 }
 
 
@@ -195,7 +190,9 @@ p{
     background-color: #b5b5b7;
 }
 #section1 h1{
-
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) ;
+    -moz-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) ;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) ;
     color: #252839;
 }
 
@@ -208,6 +205,8 @@ p{
 #section2 p{
     z-index: 3;
     color: #677077;
+    padding-bottom: 3%;
+
 }
 #section2 p{
     opacity: 0.8;
@@ -221,11 +220,80 @@ p{
 
 #section3 h1{
 
-    color: yellow;
+    color: #b5b5b7;
 }
 
 #section4 h1 {
 
     color: #b5b5b7;
+}
+.calendar{
+    padding: 0  5% 10%;
+}
+html {
+    font-size: 20px;
+}
+.social {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.social .link {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px dashed white;
+    background-clip: content-box;
+    padding: 10px;
+    transition: .5s;
+    color: #D7D0BE;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 70px;
+}
+
+.social .link span {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social .link:hover {
+    padding: 20px;
+    color: white;
+    margin-left: -5px;
+    transform: translateX(10px) rotate(360deg);
+}
+
+.social .link.google-plus {
+    background-color: #FF381A;
+    color: white;
+}
+.social .link.youtube {
+    background-color: #C21700;
+    color: white;
+}
+
+.social .link.twitter {
+    background-color: #00ACEE;
+    color: white;
+}
+
+.social .link.facebook {
+    background-color: #3B5998;
+    color: white;
+}
+.social .link.instagram{
+    background-color: #171717;
+    color: white;
 }
 

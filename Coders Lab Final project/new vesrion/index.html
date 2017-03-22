@@ -20,9 +20,9 @@
 </head>
 <body>
 	<ul id="menu">
-		<li data-menuanchor="page1" class="active"><a href="#page1">Page 1</a></li>
-		<li data-menuanchor="page2"><a href="#page2">Page 2</a></li>
-		<li data-menuanchor="page3"><a href="#page3">Page 3</a></li>
+		<li data-menuanchor="page1" class="active"><a href="#page1">Welcome</a></li>
+		<li data-menuanchor="page2"><a href="#page2">To do for today</a></li>
+		<li data-menuanchor="page3"><a href="#page3">Calendar</a></li>
 		<li data-menuanchor="page4"><a href="#page4">Page 4</a></li>
 	</ul>
 
@@ -35,7 +35,7 @@
 	    </div>
 	    <div class="section" id="section2">
 			<h1>Any plans for today?...</h1>
-	    	<div class="intro">
+	    	<div class="intro" id="toDoHold">
 				<header>
 					<input type="text" placeholder="Enter an activity.." id="item">
 					<button id="add">
@@ -55,13 +55,22 @@
 	    <div class="section" id="section3">
 	    	<div class="intro">
 	    		<h1>Here's Your calendar</h1>
-				<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=tomecki.k%40gmail.com&amp;color=%232F6309&amp;ctz=Europe%2FWarsaw" style="border-width:1" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-	    	</div>
+				<div class="calendar">
+					<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTz=0&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=tomecki.k%40gmail.com&amp;color=%232F6309&amp;ctz=Europe%2FWarsaw" style="border-width:1" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+				</div>
+			</div>
 	    </div>
 	    <div class="section" id="section4">
 	    	<div class="intro">
 	    		<h1>i don't know yet</h1>
-	    		<p>Lorem ipsum</p>
+				<div class="social">
+					<a href="https://www.facebook.com/" class="link facebook" target="_parent"><span class="fa fa-facebook-square"><img src="img\facebook.png"></span></a>
+					<a href="https://twitter.com/?request_context=signup" class="link twitter" target="_parent"><span class="fa fa-twitter"><img src="img\twiter.png"></span></a>
+					<a href="https://plus.google.com/?hl=pl" class="link google-plus" target="_parent"><span class="fa fa-google-plus-square"><img src="img\google+.png"></span></a>
+					<a href="https://www.youtube.com/feed/subscriptions" class="link youtube" target="_parent"><span class="fa fa-youtube-square"><img src="img\youtube.png"></span></a>
+					<a href="https://www.instagram.com/" class="link instagram" target="_parent"><span class="fa fa-google-plus-square"><img src="img\instagram.png"></span></a>
+				</div>
+
 
 	    	</div>
 	    </div>
