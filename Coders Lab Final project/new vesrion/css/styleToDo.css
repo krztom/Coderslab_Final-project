@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 body {
-    background: #edf0f1;
-    padding: 80px 0 0 0;
+    background: #F2B632;
+    padding: 57px 0 0 0;
 }
 
 body, input, button {
@@ -17,11 +17,10 @@ body, input, button {
 header {
     width: 90%;
     height: 80px;
-
     position: relative;
     padding: 15px;
     top: 0;
-    left: 0;
+    left: -5;
     z-index: 5;
 
     background:  #f2b632;
@@ -44,6 +43,7 @@ header input {
     border: 0px;
     box-shadow: none;
     outline: none;
+    color: #252839;
 
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -108,17 +108,18 @@ header button svg .fill {
 ul.todo {
     width: 100%;
     float: left;
+
 }
 
 ul.todo li {
     width: 100%;
     min-height: 50px;
     float: left;
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 500;
     color: #444;
     line-height: 22px;
-
+    right: -25px;
     background: #fff;
     border-radius: 5px;
     position: relative;
@@ -255,8 +256,10 @@ ul.todo#completed:after {
 #toDoHold{
     width: 80%;
     padding: 0 10% ;
+    margin-left: 3%;
+    top: 40%;
 }
 #item{
     position: relative;
-    width: 100%;
+    width: 93%;
 }

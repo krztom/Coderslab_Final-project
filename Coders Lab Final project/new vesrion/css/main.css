@@ -188,6 +188,7 @@ p{
  * --------------------------------------- */
 #section1{
     background-color: #b5b5b7;
+
 }
 #section1 h1{
     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) ;
@@ -213,19 +214,20 @@ p{
 }
 
 
-}
+
 /* Section 3
  * --------------------------------------- */
 
 
 #section3 h1{
 
-    color: #b5b5b7;
+    color:#677077;
 }
 
 #section4 h1 {
 
     color: #b5b5b7;
+    padding-bottom: 5%;
 }
 .calendar{
     padding: 0  5% 10%;
@@ -275,25 +277,25 @@ html {
 }
 
 .social .link.google-plus {
-    background-color: #FF381A;
+    background-color: #ee4134;
     color: white;
 }
 .social .link.youtube {
-    background-color: #C21700;
+    background-color: #c72127;
     color: white;
 }
 
 .social .link.twitter {
-    background-color: #00ACEE;
+    background-color: #52beea;
     color: white;
 }
 
 .social .link.facebook {
-    background-color: #3B5998;
+    background-color: #476fb0;
     color: white;
 }
 .social .link.instagram{
-    background-color: #171717;
+    background-color: ghostwhite;
     color: white;
 }
 
